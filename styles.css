@@ -1,0 +1,27 @@
+@keyframes buttonGlow {
+  0% {
+    box-shadow: 0 0 5px #ff00ff;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff00ff;
+  }
+  100% {
+    box-shadow: 0 0 5px #ff00ff;
+  }
+}
+
+button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  animation: buttonGlow 1s infinite;
+  transform: scale(1.1);
+}
